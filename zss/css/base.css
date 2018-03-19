@@ -1,0 +1,42 @@
+/*设置通用样式*/
+body{
+    color:#666;
+    margin:0;
+    padding:0;
+    background-color:#f4f4f4;
+    color:#000;
+    font:14px "sennheiserbook",Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+div.main{
+    width:1200px;
+    margin:0 auto;
+}
+a{
+    color:#666;
+    text-decoration:none;
+}
+a:hover{
+    color: #0085bf;
+}
+img{
+    vertical-align:middle;
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+div.clear-top-margin:before{
+	content:"";
+	display:table;
+}
+.lf { float:left;}
+.rt { float:right;}
+.fate{
+display:none;
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<style>
+	.nain{
+		width: 100%;
+	}
+	.top{
+		width: 100%;
+    	height: 600px;
+    	background:url(./img/bg.jpg) no-repeat;
+    	background-position: -152px 0;
+    	vertical-align: middle;
+    	background-size:cover;
+	}
+	.top .top_content{
+		width: 535px;
+		height: 330px;
+		margin:0 auto;
+		margin-top: 35px;
+		text-align: center;
+	}
+	.top .top_content img{
+		width: 65px;
+		height: 78px;
+	}
+	.top .top_content span{
+		display: block;
+		padding: 13px 0 0 0;
+		letter-spacing: -1px;
+		color: #c3a07d;
+		margin: 0 auto;
+		font-size: 32px;
+		line-height: .9em;
+	}
+	.top .top_content p{
+		margin-top: 10px;
+    letter-spacing: -1px;
+    font-size: 20px;
+    font-weight: normal;
+        color: #bebebe;
+    text-shadow: none;
+    line-height: .9em;
+	}
+	.top .top_buttom{
+		width: 280px;
+		height: 64px;
+		margin: 0 auto;
+		margin-top: 170px;
+		z-index: 10;
+		background-color: #c3a07d;
+	}
+	.top .top_buttom i{
+		padding: 7px;
+		display: block;
+		float: left;
+		width: 50px;
+		height: 50px;
+		margin: auto;
+		background:url(img/back.png) no-repeat;
+		background-position: 12px 12px;
+		border-right: 1px dotted black;
+		cursor: pointer;
+	}
+	.top .top_buttom p{
+		padding-left: 15px;
+		line-height: 64px;
+		float: left;
+	    color: #000;
+	    font-size: 12px;
+	}
+	.middle{
+		width: 100%;
+		height: 976px;
+		background:url(./img/bg-criteres.jpg) no-repeat;
+		background-size: cover;
+	}
+	/*公用*/
+	.poincon{
+		width: 65px;
+    	height: 78px;
+    	margin: 0 auto;
+    	margin-top: 40px;
+    	background:url(./img/11.png) no-repeat;
+	}
+	/*公用*/
+	.middle_title{
+		width: 100%;
+		height: 70px;
+		margin: 0 auto;
+		padding: 15px 0;
+		text-align: center;
+	}
+	.middle_title i{
+		display: inline-block;
+		width: 347px;
+		height: 11px;
+		background: url(./img/horizontal-sprite.png) no-repeat;
+		background-position: center 0;
+	} 
+	.middle_title span{
+		       display: block;
+	    padding: 13px 0 13px 0;
+	    letter-spacing: -1px;
+	    color: #c3a07d;
+	    margin: 0 auto;
+	    font-size: 32px;
+	    line-height: .9em;
+    }
+    /*结束*/
+    .middle .grid{
+	    width:984px;
+	    height:672px;
+	    margin:0 auto;
+	    margin-top: 20px;
+    }
+    .middle .grid div{
+    	float: left;
+    	width: 245px;
+    	height: 167px;
+    	margin-right: 1px;
+    	margin-bottom: 1px;
+    	overflow: hidden;
+    }
+    .middle .grid .desc{
+    	position: relative;
+    }
+    .middle .grid .desc span{
+    	position: absolute;
+    	display: block;
+    	top: 60px;
+    	left: 25px;
+    	font-size: 22px;
+    	color: #c3a07d;
+    	line-height: .9em;
+    	letter-spacing: -1px;
+    }
+    .middle .grid .desc p{
+    	position: absolute;
+    	top: 90px;
+    	left: 25px;
+    	font-size: 16px;
+    	line-height: .9em;
+    	letter-spacing: -1px;
+    	color: #bebebe;
+    }
+    .about{
+    	width: 100%;
+    	height: 713px;
+    	background: #ece4d7;
+    }
+    .about .poincon{
+    	background:url(./img/logo.png) no-repeat;
+    }
+    .blk{
+    	width: 994px;
+    	height: 396px;
+    	margin: 0 auto;
+    	margin-top: 40px;
+    }
+    .blk div{
+    	float: left;
+    	width: 239px;
+    	height: 387px;
+    	margin-right: 6px;
+    	overflow: hidden;
+    	    background: #ededed;
+    }
+    .blk div img{
+    	width: 239px;
+    	height: 185px;
+    	margin: 0 auto;
+    	overflow: hidden;
+    	margin-bottom: 5px;
+    }
+    .blk div span{
+    	display: block;
+    	text-align: center;
+    	color: #999;
+    	font-size: 17px;
+    }
+    .blk div i{
+    	display: block;
+    	width: 100%;
+    	height:2px;
+    	background: gray;
+    	margin:20px 0 7px 0;
+    }
+    .blk div p{
+    	font-family: "微软雅黑",Arial;
+    	text-align: center;
+    	font-size: 12px;
+    	color: #262522;
+    }
+    .blk div a{
+    	display: block;
+    	width: 60px;
+    	margin: 0 auto;
+    	margin-top: 60px;
+    	text-align: center;
+    	padding: 6px 25px;
+    	border: dotted 1px #554728;
+    	color: #999;
+    	font-size: 12px;
+    }
+    .hallmark{
+    	width: 100%;
+    	height: 672px;
+    	background: url(./img/bg-rd.jpg) no-repeat center top;
+    }
+    .scrolltop{
+    	width: 100%;
+    	height: 660px;
+    	background: #000 url(./img/bg-selection.jpg) no-repeat center bottom;
+    }
+    .hallmark .middle_title{
+    	margin-top: 40px;
+    }
+    .search{
+    	display:inline-block;
+    	margin-top: 30px;
+    	color: #c3a07d;
+    	padding: 6px 25px;
+    	 border: dotted 1px #554728;
+    }
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="top">
+			<table></table>
+			<div class="top_content">
+				<img src="./img/11.png">
+				<span>江诗丹顿<br>与日内瓦印记</span>
+				<p>卓越品质认证 <br>原产地、耐久性、精确度和钟表专业技术的保证</p>
+			</div>
+			<div class="top_buttom">
+				<i></i>
+				<p>日内瓦印记的秘密</p>
+			</div>
+		</div>
+		<div class="middle">
+			<table></table>
+			<div class="poincon"></div>
+			<div class="middle_title">
+				<i></i>
+				<span>日内瓦印记的标准</span>
+				<i></i>
+			</div>
+			<div class="grid">
+				<div class="desc">
+					<span>机芯</span>
+					<p>所有机芯零部件和<br>附加装置</p>
+					<i></i>
+				</div>
+				<div><a href="intr.html?lid=1"><img src="./img/image0.jpeg"></a></div>
+				<div><a href="intr.html?lid=2"><img src="./img/image1.jpeg"></a></div>
+				<div><a href="intr.html?lid=3"><img src="./img/image2.jpeg"></a></div>
+				<div><a href="intr.html?lid=4"><img src="./img/image3.jpeg"></a></div>
+				<div><a href="intr.html?lid=5"><img src="./img/image2.jpeg"></a></div>
+				<div><a href="intr.html?lid=6"><img src="./img/image5.jpeg"></a></div>
+				<div><a href="intr.html?lid=7"><img src="./img/image6.jpeg"></a></div>
+				<div><a href="intr.html?lid=8"><img src="./img/image7.jpeg"></a></div>
+				<div><a href="intr.html?lid=9"><img src="./img/image8.jpeg"></a></div>
+				<div class="desc">
+					<span>外观组件</span>
+					<p>外观组件和机芯之间的<br>连接元件</p>
+					<i></i>
+				</div>
+				<div><a href="intr.html?lid=10"><img src="./img/image9.jpeg" "10"></a></div>
+				<div class="desc">
+					<span>腕表主体 （表头）</span>
+					<p>腕表成品的检测</p>
+					<i></i>
+				</div>
+				<div><a href="intr.html?lid=11"><img src="./img/image10.jpeg" "11"></a></div>
+			</div>
+		</div>
+		<div class="about">
+			<table></table>
+			<div class="poincon"></div>
+			<div class="middle_title">
+				<i></i>
+				<span>日内瓦印记<br>相关知识</span>
+				<i></i>
+			</div>
+			<div class="blk">
+				<div>
+					<img src="./img/icon1.jpeg">
+					<span>专属印记</span>
+					<i></i>
+					<p>自1901年以来，江诗丹顿一直是日内瓦印记最忠实的代表。</p>
+					<a href="introduct1.html">探索</a>
+				</div>
+				<div>
+					<img src="./img/icon2.jpeg">
+					<span>日内瓦印记的起源</span>
+					<i></i>
+					<p>卓越非凡的历史，<br>始于19世纪。</p>
+					<a href="introduct2.html" >探索</a>
+				</div>
+				<div>
+					<img src="./img/icon3.jpeg">
+					<span>三项认证条件</span>
+					<i></i>
+					<p>极为严苛的审核<br>与认证流程。</p>
+					<a href="introduct3.html">探索</a>
+				</div>
+				<div>
+					<img src="./img/icon4.jpeg">
+					<span>证书</span>
+					<i></i>
+					<p>枚获得日内瓦印记的腕表均附带独一无二的官方文件。</p>
+					<a href="introduct4.html">探索</a>
+				</div>
+			</div>
+		</div>
+		<div class="hallmark">
+			<table></table>
+			<div class="middle_title">
+				<i></i>
+				<span>江诗丹顿日内瓦印记工坊</span>
+				<i></i><br>
+				<a href="introduct5.html" class="search">探索</a>
+			</div>
+		</div>
+		<div class="scrolltop">
+			<table></table>
+			<div class="middle_title">
+				<i></i>
+				<span>探索镌刻日内瓦印记的表款</span>
+				<i></i><br>
+				<a href="#" class="search">探索</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.2.0.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+	font: 16px '微软雅黑',PingFang SC,sans-serif;
+	margin: 0;
+	background-color: #F5F5F5;/*默认样式*/
+}
+
+div,h1,h2,h3,h4,h5,h6,ul,p{
+	margin: 0;
+	padding: 0;
+}
+
+div::selection,h1::selection,h2::selection{
+	background-color: #E8DFD3;
+	color: #000;
+}
+/*图片自适应*/
+.imgResponsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*线条背景*/
+.h_sprite {
+	display: block;
+	background: url(../img/careers/horizontal-sprite.png) no-repeat;
+}
+/*探索类按钮*/
+.explorebtn {
+	display: inline-block;
+	border: 1px dotted #C3A07D;
+	color: #C3A07D;
+	padding: 7px 25px;
+	font: 0.70em '微软雅黑';
+}
+
+.stylenormal {
+	font-style: normal;
+}
+
+.styleitalic {
+	font-style: italic;
+}
+
+.hidden {
+	overflow:hidden;
+}
+
+.none {
+	display: none;
+}
+
+ul>li{
+	list-style: none;
+}
+
+a{
+	color: #000;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+::selection{
+	background-color: #E8DFD3;
+}
+
+/*::selection {background:#93C; color:#FCF;} */
+
+
+/**************************new********************************/
+/*公共样式*/
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+.clear{
+  display:table;
+  content:"";
+  clear:both;
+  overflow:hidden;
+}
+.fate{
+display:none;
+}

@@ -1,0 +1,36 @@
+body{
+	width: 100%;
+	margin: 0px;
+	font-family: 'Georgia','serif';
+/*    font-weight: normal;*/
+    text-transform: uppercase;
+    font-style: italic;
+}
+ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,button{
+	margin: 0px;
+	padding: 0px;
+}
+ul,ol{
+	list-style: none;
+}
+.lf{
+	float: left;
+}
+.rt{
+	float: right;
+}
+.clearfloat:after{
+	content: "";
+	display: table;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+a:hover{
+	text-decoration: none;
+	color: gray;
+}

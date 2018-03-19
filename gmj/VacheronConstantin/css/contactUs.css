@@ -1,0 +1,220 @@
+.contactWay {
+	margin: 0 auto;
+	width: 1000px;
+	color: #999;/*默认样式*/
+	font-style: italic;/*默认样式*/
+	
+}
+/*主体分为三部分，这是第一个部分最上方的外部div*/
+.contacttop {
+	margin: 0 auto;
+	width: 455px;
+	text-align: center;
+	padding: 20px 0 0 0;
+}
+/*第一个h1标签*/
+.contacttop>h1 {
+	font-weight: normal;
+
+}
+/*3个联系方式通用样式*/
+.contacttop>.way {
+	padding: 30px 0 20px 0;
+}
+.contacttop>.way>span {
+	display: inline-block;
+	width: 290px;
+	height: 25px;
+	line-height: 25px;
+	color: #000;
+	background-color: #fff;
+}
+/*手机联系*/
+.contacttop>.way_phone {
+	position: relative;
+	background: url(../img/contact/bg-select-aside.png) no-repeat;
+	width: 340px;
+	height: 41px;
+	margin: auto;
+	text-align: left;
+	color: #554728;
+	border: 1px dotted #554728;
+}
+/*统一样式*/
+.contacttop>.way_phone>span {
+	line-height: 41px;
+	font-size: 0.80em;
+}
+/*国家*/
+[data-toggle=waycontray] {
+	padding-left: 20%;
+}
+/*手机号*/
+[data-toggle=wayphone] {
+	font-weight: bolder;
+}
+/*冒号-分隔符*/
+.contacttop>.way_phone>sub {
+	position: relative;
+	top: -4px;
+	left: -3.5px;
+}
+/*下拉菜单*/
+.phone_menu {
+	text-align: left;
+	border-left: 1px dotted #554728;
+	position: absolute;
+	display: none;
+	width: 340px;
+	height: 134.5px;
+	margin: auto;
+	overflow-y: auto;
+	background-color: #DED6CA;
+	color: #000;
+	transform: translateX(57px);
+}
+
+.phone_menu_li {
+	border-bottom: 1px dotted #554728;
+	padding: 7.5px 12px;
+	font: 0.75em "helveticaneue_condensedbold";
+	line-height: 18px;
+}
+
+.phone_menu_li:hover {
+	background-color: #DAD2C9;
+}
+
+/*开放时间*/
+.contacttop>.way_timet {
+	font-size: .8em;
+	margin-top: 20px;
+	color: #554728;
+	font-weight: bolder;
+}
+/*具体日期*/
+.contacttop>.way_timec {
+	font-size: .75em;
+}
+/*电子邮件标题*/
+.contacttop>.way_emailtitle {
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+
+/*主体分为三部分，这是第二个部分中间的外部div*/
+.contactmiddle {
+	margin: 0 auto;
+	width: 1000px;
+}
+/*电子邮件联系-弹性布局*/
+.contactmiddle>.way_email {
+	text-align: center;
+}
+/*每个宽高*/
+.contactmiddle>.way_email>.ourserver {
+	width: 32%;
+	padding-bottom: 70px;
+	background-color: #fff;
+}
+/*图片占位*/
+.ourserver>.serverimg {
+	width: 100%;
+	height: 180px;
+}
+/*标题*/
+.ourserver>.servertitle {
+	font-size: 1.1em;
+	margin-top: 15px;
+}
+/*列表*/
+.ourserver>.serverul {
+	margin-top: 15px;
+	text-align: left;
+}
+
+.ourserver>.serverul>li {
+	background: url(../img/contact/li.png) no-repeat 10px 9px;
+	margin: 3px 0;
+	padding-left: 22px;
+}
+
+.ourserver>.serverul>li>a {
+	line-height: 100%;
+	font: bolder .75em '微软雅黑';
+	color: #554728;
+}
+
+.ourserver>.serverul>li>a:hover {
+	color: #392E15;
+}
+
+/**/
+.contactmiddle {
+	margin-bottom: 100px;
+}
+
+.contactmiddle>.way_bottom>.botul {
+	margin: 10px 0;
+	border-top: 1px dashed #554728;
+	border-bottom: 1px dashed #554728;
+}
+
+.botul>li {
+	display: inline-block;
+}
+
+.botul>.botlit {
+	padding: 13px;
+	width: 30%;
+	font-size: 1.3em;
+}
+
+.botul>.botlib>a {
+	display: inline-block;
+	height: 15px;
+	line-height: 15px;
+	background:  url(../img/contact/li.png) no-repeat 5px;
+	padding-left: 15px;
+	font: bolder .75em '微软雅黑';
+	color: #554728;
+}
+
+.botul>.botlib>a:hover {
+	color: #392E15;
+}
+
+.botul>.botlit::selection {
+	color: #000;
+}
+/*尾部*/
+.contactpart {
+	width: 100%;
+	background-color: #000;
+}
+
+.cp {
+	width: 1000px;
+	margin: 0 auto;
+}
+/*尾部div*/
+.cp>.part {
+	margin: 30px 0;
+	width: 32%;
+}
+
+.cp>.part>.part_title{
+	font-size: 1.0em;
+	color: #BEBEBE;
+}
+
+.cp>.part>.part_content{
+	font-size: .9em;
+	color: #C3A07D;
+	margin-bottom: 10px;
+}
+
+.cp>.part>.partimg {
+	width: 100%;
+	height: 128px;
+}

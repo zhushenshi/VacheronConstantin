@@ -1,0 +1,30 @@
+(()=>{
+$(".header").load("header.html",()=>{
+$(".c1,.drap_down1").hover(()=>{	
+	$(".drap_down1").toggleClass("fate");
+})
+$(".c2,.drap_down2").hover(()=>{	
+	$(".drap_down2").toggleClass("fate");
+})
+$(".c3,.drap_down3").hover(()=>{	
+	$(".drap_down3").toggleClass("fate");
+})
+$(".c3.drap_down3").hover(()=>{	
+	$(".drap_down3").toggleClass("fate");
+})
+$(".c4,.drap_down4").hover(()=>{	
+	$(".drap_down4").toggleClass("fate");
+})
+$(".c5,.drap_down5").hover(()=>{	
+	$(".drap_down5").toggleClass("fate");
+})
+$(".country").click(()=>{
+ $(".cou_menu").toggleClass("fate");
+})
+$(".cou_menu_li").click((e)=>{
+ $tar=$(e.target);
+ $(".country").html($tar.html());
+ $(".cou_menu").addClass("fate");
+})
+});
+})()

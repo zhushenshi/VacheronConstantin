@@ -1,0 +1,20 @@
+$(".menu5>div:first-child").click(function(){
+   $(".slider1").removeClass("fate");
+   $(".slider1").siblings().addClass("fate");
+})
+$(".menu5>div:nth-child(2)").click(function(){
+   $(".slider2").removeClass("fate");
+   $(".slider2").siblings().addClass("fate");
+})
+$(".menu5>div:nth-child(3)").click(function(){
+   $(".slider3").removeClass("fate");
+   $(".slider3").siblings().addClass("fate");
+})
+$(".menu5>div:nth-child(4)").click(function(){
+   $(".slider4").removeClass("fate");
+   $(".slider4").siblings().addClass("fate");
+})
+$(".menu5>div:nth-child(5)").click(function(){
+   $(".slider5").removeClass("fate");
+   $(".slider5").siblings().addClass("fate");
+})

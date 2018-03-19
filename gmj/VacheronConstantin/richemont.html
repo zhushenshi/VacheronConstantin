@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>职位搜索</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/richemont.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+	<div class="richemont">
+		<!-- 头部 -->
+		<div class="richt">
+			<a href="../../index.html">
+				<img src="img/richemont/Banner_VAC.png" alt="logo.png">
+			</a>
+			<div class="richbtn"><a href="javascript:;"><span>职位搜索</span></a></div>
+		</div>
+
+		<!-- 导航：登录、语言 -->
+		<div class="richnav">
+			<span class="richnav_login"><a href="javascript:;">登录</a></span>
+			<span>|</span>
+			<span class="richlang">
+				<span><a href="javascript:;">English</a></span>
+				<span><a href="javascript:;">Français</a></span>
+				<span><a href="javascript:;">Deutsch</a></span>
+				<span><a href="javascript:;">Italiano</a></span>
+				<span><a class="richwhite" href="javascript:;">简体字</a></span>
+				<span><a href="javascript:;">繁體中文</a></span>
+				<span><a href="javascript:;">日本語</a></span>
+				<span><a href="javascript:;">한국어</a></span>
+			</span>
+			<span class="richarrows richarrows_rotateopen"><i class="iconfont icon-yousanjiao"></i></span>
+		</div>
+		<!-- 主体 -->
+		<div class="richcon">
+			<!-- 职位搜索 -->
+			<div class="richmain">
+				<!-- 职位搜索 -->
+				<div class="richmain_search">
+					<h2>职位搜索</h2>
+					<div class="rich_sef">职能范围</div>
+					<div class="rich_sein"><input data-toggle="rich_sef" type="text" readonly><button data-toggle="rich_sef_menu">&nbsp;&nbsp;</button></div>
+					<div class="rich_sef_menu">
+						<ul>
+							<li>Administrative Support & Onsite services</li>
+							<li>Creation & Design</li>
+							<li>Customer Services</li>
+							<li>Finance</li>
+							<li>General Management</li>
+							<li>Human Resources</li>
+							<li>IT</li>
+							<li>Legal</li>
+							<li>Manufacturing - Production / Fabrication / Quality</li>
+							<li>Manufacturing - R&D</li>
+							<li>Marketing - Communications</li>
+							<li>Marketing - Product Development</li>
+							<li>Other</li>
+							<li>Real Estate</li>
+							<li>Sales</li>
+							<li>Strategy, Organisation, Audit & Consulting</li>
+							<li>Supply Chain & Logistics</li>
+						</ul>
+					</div>
+					<div class="rich_sef">国家/地区</div>
+					<div class="rich_sein"><input data-toggle="rich_sefc" type="text" readonly><button  data-toggle="rich_sefc_menu">&nbsp;&nbsp;</button></div>
+					<div class="rich_sefc_menu">
+						<ul>
+							<li>Argentina</li>
+							<li>Australia</li>
+							<li>Austria</li>
+							<li>Belgium</li>
+							<li>Brazil</li>
+							<li>Canada</li>
+							<li>China</li>
+							<li>France</li>
+							<li>Germany</li>
+							<li>Greece</li>
+							<li>Guam</li>
+							<li>Hong Kong</li>
+							<li>India</li>
+							<li>Italy</li>
+							<li>Japan</li>
+							<li>Luxembourg</li>
+							<li>Macau</li>
+							<li>Malaysia</li>
+							<li>Mexico</li>
+							<li>Monaco</li>
+							<li>Netherlands</li>
+							<li>Portugal</li>
+							<li>Puerto Rico</li>
+							<li>Russian Fed.</li>
+							<li>Singapore</li>
+							<li>South Africa</li>
+							<li>South Korea</li>
+							<li>Spain</li>
+							<li>Switzerland</li>
+							<li>Taiwan</li>
+							<li>Thailand</li>
+							<li>Turkey</li>
+							<li>USA</li>
+							<li>United Kingdom</li>
+							<li>Utd.Arab Emir.</li>
+						</ul>
+					</div>
+					<div class="rich_sef">所在地</div>
+					<div class="rich_seinpost" data-c="seinpost"><input data-toggle="rich_sefp" type="text" readonly><button data-toggle="rich_sefp_menu">&nbsp;&nbsp;</button></div>
+					<div class="rich_sefp_menu">
+						<ul>
+							<li>Administrative Support & Onsite services</li>
+							<li>Creation & Design</li>
+							<li>Customer Services</li>
+							<li>Finance</li>
+							<li>General Management</li>
+							<li>Human Resources</li>
+							<li>IT</li>
+							<li>Legal</li>
+							<li>Manufacturing - Production / Fabrication / Quality</li>
+							<li>Manufacturing - R&D</li>
+							<li>Marketing - Communications</li>
+							<li>Marketing - Product Development</li>
+							<li>Other</li>
+							<li>Real Estate</li>
+							<li>Sales</li>
+							<li>Strategy, Organisation, Audit & Consulting</li>
+							<li>Supply Chain & Logistics</li>
+						</ul>
+					</div>
+					<div class="rich_sereset pointer"><i class="iconfont icon-lajitong"></i>全部重置</div>
+					<div class="rich_beginse pointer"><i class="iconfont icon-sousuo"></i>&nbsp;开始搜索</div>
+				</div>
+				<!-- 具体职位信息 -->
+				<div class="richmain_semsg">
+					<!-- 左侧搜索栏 -->
+					<div class="richmsg_lf">
+						<!-- 搜索框 -->
+						<div class="search_kw">
+							<span class="search_kw_input">
+								<input data-toggle="search_kw_input" type="text" placeholder="关键词">
+							</span>
+							<span class="search_kw_search pointer"><i class="rich_i_kw_search iconfont icon-sousuo"></i></span>
+							<span class="search_kw_clear pointer"><i class="rich_i_kw_search iconfont icon-quxiao"></i></span>
+						</div>
+						<div class="richmsg_lf_rescount">搜索结果(<span data-toggle="richrescount">...</span>)</div>
+						<div data-toggle="search_result">
+						</div>
+					</div>
+					<!-- 右侧广告栏 -->
+					<div class="richmsg_ad">
+						<div class="richmsg_ad_f">
+							<h4 class="richmsg_ad_f_t">订阅职位提醒</h4>
+							<p class="richmsg_ad_f_con">招聘岗位符合您的要求时，接收电子邮件提醒</p>
+							<div class="richmsg_ad_f_click pointer">接收职位提醒</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 职位详情 -->
+			<div class="rich_postdesc">
+
+			<div class="postcon">
+				<div class="postdesc">
+
+					<div class="postuse">
+						<a href="javascript:;" data-toggle="postgback">返回</a><a data-toggle="postuse_" href="javascript:;">应用</a>
+					</div>
+
+					<div class="post_refercode">参考代码 : <span data-use="post_refercode"></span></div>
+
+					<div class="post_refercode">发布于 : <span data-use="issuetime"></span></div>
+					
+					<div class="post_name">
+						<h2 data-use="post_name"></h2>
+					</div>
+
+					<div class="post_city">
+						<div data-use="post_city"></div>
+						<div data-use="workingh"></div>
+					</div>
+
+					<div class="post_projectd">
+						<h3>项目</h3>
+						<div class="post_pcon">
+							<span class="post_pconx">
+配合及协助店经理及主管，以达成公司销售业绩，维护品牌形象为目的，执行日常整个精品店的运营及销售工作。 
+销售顾问的主要职责如下 
+
+销售计划的实施和汇报: 
+1． 按照店铺经理和主管的要求，实现个人销售目标，包括销售额和作品组合。 
+2． 在销售过程中体现团队合作，并协助其它团队成员达成目标。 
+3． 维持与客户的长期良好关系。体现品牌精神，向主管汇报与客人沟通情况，及时将客人的信息要求反馈给公司，确保更好的服务和加深客户关系。 
+4． 了解市场动态，竞争品牌等相关信息，给予客户专业的分析，提升品牌的知名度和形象。 
+
+对于自身的行为管理: 
+1． 严格遵循品牌要求，确保个人形象和行为符合品牌要求。 
+2． 对品牌历史、背景、文化及作品有完整认知和诠释。 
+3． 熟悉服务标准并严格遵守，确保给予顾客周到的服务和美好的购物体验。 
+
+对于店铺的运营:
+1． 了解及遵守精品店安全规则及保安程序，完成精品店营业前的准备工作和精品店营业后的整理工作，记录作品的销售以及进出等相关事项，同时做好作品的验收工作。 
+2． 确保精品店内外的环境整洁，及销售工具的安全、整理、正确摆放。 
+3． 按照品牌的特别规定陈列，清洁、包装、摆放作品，协助并负责陈列用具的管理 
+4． 根据主管安排进行每日盘点，协助库管进行月底盘点。 
+5． 认真处理售后服务。 
+6． 监督店铺维修和装修的施工。 </span>
+							</div>
+						</div>
+						
+						<div class="post_refbtn post_refercode">参考代码 : <span data-use="post_refercode"></span></div>
+						
+						<div class="postuse">
+							<a href="javascript:;">应用</a>
+						</div>
+
+					</div>
+					<div class="postlink">
+						<div class="postlinkcon postlinkemail pointer"><a href="javascript:;"><img class="postlinkcon_img" src="img/richemont/Email.png" alt=""></a></div>
+						<div class="postlinkcon postlinkLinkedin pointer"><a href="javascript:;"><img class="postlinkcon_img" src="img/richemont/Linkedin.png" alt=""></a></div>
+						<div class="postlinkcon postlinkTwitter pointer"><a href="javascript:;"><img class="postlinkcon_img" src="img/richemont/Twitter.png" alt=""></a></div>
+						<div class="postlinkcon postlinkFacebook pointer"><a href="javascript:;"><img class="postlinkcon_img" src="img/richemont/Facebook.png" alt=""></a></div>
+						<div class="postlinkcon postlinkGP pointer"><a href="javascript:;"><img class="postlinkcon_img" src="img/richemont/Google_plus.png" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="richcon_login">
+
+				<div class="rich_border">
+					<div class="rich_log">
+						<div class="postuse"><!-- loginback -->
+							<a href="javascript:;" data-toggle="postgback">返回</a>
+						</div>
+						<div class="rich_log_t">登录</div>
+						<div class="rich_log_tdesc">登录以申请职位或更新资料</div>
+						<div class="rich_log_input">
+							<input type="text" placeholder="电子邮件">
+						</div>
+						<div class="rich_log_input">
+							<input type="text" placeholder="密码">
+						</div>
+						<div class="rich_log_forget">
+							<a href="javascript:;">忘记密码</a>
+						</div>
+						<div class="rich_log_btn">
+							<input type="button" value="登录">
+						</div>
+						<div class="rich_log_tdesc">或使用您的LinkedIn帐户查看资料</div>
+						<div class="rich_log_btn rich_log_linkedin">
+							<input type="button" value="使用LinkedIn登录">
+						</div>
+						<div class="rich_log_tte">还不是会员?</div>
+						<div class="rich_createz"><span>创建资料</span></div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/richemont.js"></script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+body{
+    width:100%;
+    background:#000;
+}
+/*外面大盒子*/
+.container{
+    width:100%;
+    /*border:1px solid red;测试*/
+}
+/*logo外面的大盒子*/
+.header_logo{
+    width:100%;
+}
+/*a标记*/
+.header_img{
+    width: 282px;
+    height:162px;
+    display:block;
+    /*border:1px solid red;测试*/
+    margin-top:26px;
+}
+/*logo图片*/
+.header_img>img{
+    width: 100%;
+    height:100%;
+}
+@media screen and (min-width:992px){
+    .header_img{
+        margin-left:5%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .header_img{
+       margin:26px auto 0;
+    }
+}
+@media screen and (max-width:767px){
+    .header_img{
+        margin-left:5%;
+    }
+}
+/*register登录*/
+.register-item{
+ width:100%;
+  /*border:1px solid blue;测试*/
+}
+.register{
+  width:100%;
+}
+.register>div{
+    width: 100%;
+    text-align: center;
+    color: #a48f69;
+    font-size: 36px;
+    font-weight: normal;
+    padding-bottom: 15px;
+    background: url(../img/bg-title-home.png) no-repeat center bottom;
+    background-size:53%;
+    margin-left:3px;
+}
+/*表单样式*/
+form{
+    width:600px;
+    /*height:2668px;*/
+    margin:0 auto;
+    /*border:1px solid red;测试*/
+    position:relative;
+}
+.form_item{
+    width:100%;
+    margin-top:11px;
+}
+/*提示框内容:用户名、邮箱、密码*/
+.confirm{
+    width: 100%;
+    height: 41px;
+    color: red;
+    font-size: 11px;
+    border: 1px solid red;
+    padding-left: 43px;
+    margin-top: 23px;
+    line-height: 38px;
+    background: url(../img/arrow-error.png) no-repeat 10px;
+    background-size: 30px;
+    display:none;
+}
+.f_style{
+    height: 37px;
+    text-transform: none;
+    font-size: 12px;
+    padding-left: 28px;
+    font-weight: normal;
+    background: url(../img/arrow-error.png) no-repeat 5px center #000;
+    background-size: 25px 25px;
+    border: 1px solid #f00;
+    color: #f00;
+    line-height: 32px;
+    display:none;
+}
+a:link,a:visited{
+    color: #0062A0;
+    text-decoration: underline;
+}
+.f_style>span>a:hover{
+    color:#afafaf;
+    opacity: 0.1;
+}
+.p_style1{
+    margin-top: 28px;
+    padding-left: 31px;
+    line-height: 29px;
+    height: 32px;
+    font-size: 11px;
+    color: red;
+    border: 1px solid red;
+    background: url(../img/arrow-error.png) no-repeat 5px center #000;
+    background-size: 25px 25px;
+    display: none;
+}
+.p_style{
+    display:none;
+}
+/*表单公共样式--upwd密码*/
+.form_style{
+    width:100%;
+    text-align: left;
+    text-transform: uppercase;
+    color: #bda67c;
+    font-size: 18px;
+}
+.t_style,.w_style{
+    margin-top:20px;
+}
+/*s所有星星样式*/
+.star{
+    display:inline-block;
+    color:#f00;
+    font-size:33px;
+    vertical-align:middle;
+}
+.I_style{
+    color: red;
+    margin-top: 8px;
+    padding-left: 31px;
+    line-height: 36px;
+    height: 37px;
+    border: 1px solid red;
+    background: url(../img/arrow-error.png) no-repeat 5px center #000;
+    background-size: 25px 25px;
+    font-size: 12px;
+    display: none;
+}
+/*密码左边*/
+.form_left{
+    width:50%;
+}
+/*input输入框样式*/
+.form_input{
+    border: 1px solid #49484a;
+    background: #000;
+    color: #d6ba87;
+    width:100%;
+    height:25px;
+    box-shadow: none;
+}
+/*表单文字样式*/
+.form_font{
+    font-size: 12px;
+    font-weight: normal;
+    color: #fff;
+    text-transform: none;
+    margin-top: 6px;
+    /*display:none;*/
+}
+.fl_span{
+    width: 100%;
+    height: 37px;
+    text-transform: none;
+    font-size: 11px;
+    padding-left: 36px;
+    font-weight: normal;
+    background: url(../img/arrow-error.png) no-repeat 5px center #000;
+    background-size: 25px 25px;
+    border: 1px solid #f00;
+    color: #f00;
+    line-height: 35px;
+    display:none;
+}
+
+/*密码输入框样式*/
+#form_input1{
+    width:60%;
+}
+.p_style{
+    color:#fff;
+    font-size:12px;
+    line-height:20px;
+}
+.p_style>span{
+  color:red;
+}
+#form_input2{
+    width:75%;
+}
+/*清除浮动*/
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/*密码强度样式*/
+.password_strength{
+    width:40%;
+    float:right;
+    /*margin-left:25px;*/
+}
+.password_font{
+    width:100%;
+    color:#fff;
+}
+.weak{
+  color:#fff;
+  margin-top:-36px;
+  margin-left:180px;
+}
+/*进度条*/
+.progress{
+    width: 220px;
+    height: 3px;
+    /*border: 1px solid #fff;*/
+    background: #fff;
+    opacity: 0.9;
+
+}
+.progress_color{
+    /*width:auto;*/
+    width:0;
+    height:3px;
+    background:#47C965;
+}
+/*确认密码*/
+.confirm_password{
+  width:100%;
+}
+
+/*密码提示框*/
+.hint_box{
+    margin-top:10px;
+}
+.hint_box>li{
+  margin-top:3px;
+  margin-left:2px;
+  list-style:disc;
+}
+.input_style{
+  width:35%
+}
+/*密码提示信息框-点击密码框弹出*/
+.confirm_content{
+    border: 1px solid #fff;
+    width: 369px;
+    /*height: 125px;*/
+    margin-top: 25px;
+    display:none;
+}
+/*姓氏和名字*/
+.fl_name{
+  width:100%;
+  margin-top:29px;
+}
+/*清除浮动*/
+.clear:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+/*姓氏，名字个宽度占比*/
+.first_name{
+  width:49%;
+  float:left;
+}
+.last_name{
+  width:49%;
+  float:right;
+}
+.l_style{
+    color: red;
+    border: 1px solid red;
+    width: 100%;
+    height: 38px;
+    line-height: 36px;
+    font-size: 12px;
+    padding-left: 35px;
+    background: url(../img/arrow-error.png) no-repeat 5px center #000;
+    background-size: 25px 25px;
+    margin-top: 22px;
+    display:none;
+}
+.l_style1{
+    color: red;
+    border: 1px solid red;
+    width: 100%;
+    height: 38px;
+    line-height: 36px;
+    font-size: 12px;
+    padding-left: 35px;
+    background: url(../img/arrow-error.png) no-repeat 5px center #000;
+    background-size: 25px 25px;
+    margin-top: 22px;
+    display:none;
+}
+/*地址*/
+.address{
+    margin-top:16px;
+}
+.adr{
+    color: red;
+    border: 1px solid red;
+    width: 50%;
+    height: 38px;
+    line-height: 36px;
+    font-size: 12px;
+    padding-left: 35px;
+    background: url(../img/arrow-error.png) no-repeat 5px center #000;
+    background-size: 25px 25px;
+    margin-top: 22px;
+    display:none;
+}
+
+.form_dropdown,.form_sex,.form_check{
+  width:100%;
+  margin-top:16px;
+}
+.form_check:first-child{
+    margin-top:15px;
+}
+/*性别和个人信息---下拉菜单*/
+.dropdown{
+    width:49%;
+    background: url(../img/dropdown.png) no-repeat right 10px,
+    url(../img/bg-pager.png) repeat-x;
+    border: none;
+    height: 36px;
+    border-radius: 6px;
+    box-shadow: none;
+    text-transform: uppercase;
+	position:relative;
+		
+}
+/*.dropdown:hover>.dropdown-menu{*/
+  /*cursor: pointer;*/
+/*!*	display:block;*!*/
+/*!*  border:1px solid #515151;*!*/
+	/*height:auto;*/
+/*}*/
+.dropdown>a{
+    display:inline-block;
+    color:#fff;
+    margin-top:6px;
+    margin-left:13px;
+    text-decoration: none;
+    width:100%;
+}
+.dropdown-menu{
+    border:0;
+    width:293px;
+    height:0;
+    overflow:hidden;
+    color:#fff;
+    background:#212121;
+    margin-top:6px;
+    padding-left:8px;
+    position:absolute;
+    /*transition:all .5s linear;*/
+}
+.dropdown-menu>li{
+    border-bottom: dotted 1px #515151;
+    display: block;
+    outline: none;
+    padding: 7px 0 7px 3px;
+}
+.dropdown-menu>li:hover{
+  color:#bda67c;
+}
+.cloose,.cloose>.dropdown-menu{
+  width:100%;
+}
+/*提交按钮*/
+.form_button{
+  text-align:center;
+  width:100%;
+  margin-top:35px;
+}
+#btnRegister{
+    color: #fff;
+    width:226px;
+    height:35px;
+    background: url(../img/bg-pager.png) repeat-x;
+    background-size: 100% 50px;
+    line-height:39px;
+    text-transform: uppercase;
+    font-size:16px;
+    font-weight: bold;
+    margin-top:10px;
+}
+/*尾部样式*/
+.footer{
+    width:100%;
+    height: 128px;
+    background: #1A1A1A;
+    margin-top:84px;
+}
+/*尾部一、图片外壳*/
+.footer_box,.footer_box2{
+    width:33%;
+    height:76px;
+    float:left;
+    text-align: center;
+    margin-top:22px;
+    border-right: 0.1px solid #8D8D8D;
+}
+/*尾部第一、二张图片*/
+.footer_pucture>img,.footer_pucture2>img{
+    width: 158px;
+    height: 64px;
+}
+.form_box3{
+    width:319px;
+    height:72px;
+    /*border:1px solid red;测试*/
+    float:right;
+    margin-top:53px;
+    margin-left:-31px;
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.form_box3>a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #a08149;
+    font-size:16px;
+}
+
+
+
+
+
+
+
+
+

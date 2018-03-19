@@ -1,0 +1,92 @@
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,nav,section{
+    margin:0;
+    padding:0;
+	box-sizing:border-box;
+}
+body,button,input,select,textarea{
+    font: 12px/1.5 '宋体',Arial,Verdana,tahoma,Helvetica,sans-serif
+}
+input,select,textarea{
+    font-size:100%;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img{
+    border:0;
+}
+
+ul,ol{
+    list-style: none;
+}
+q:before,q:after {
+    content:'';
+}
+
+/* 清理浮动 */
+.clear {
+    clear:both;
+    height:0;
+    overflow:hidden;
+    display:block;
+    line-height:0;
+}
+.clearfix:after {
+    clear:both;font-size:0;
+    height:0;
+    display:block;
+    visibility:hidden;
+    content:" ";
+    line-height:0;
+}
+.clearfix {zoom:1}/* for IE6 IE7 */
+
+/*链接根据页面要求全局自定义*/
+/*链接*/
+a:link {
+    text-decoration:none;/*下划线*/
+    color:#000000;/*颜色*/
+}
+/*被访问过链接*/
+a:visited {
+    text-decoration:none;/*下划线*/
+    color:#000000;/*颜色*/
+}
+/*鼠标经过*/
+a:hover {
+    text-decoration:none;/*下划线*/
+    color:#643b05;/*颜色*/
+}
+/*链接被按下*/
+a:active {
+    text-decoration:none;/*下划线*/
+    color:#643b05;/*颜色*/
+}
+/*链接橙色*/
+a.orange{
+    color:#8e5f07;/*颜色*/
+}
+/*链接灰色*/
+a.gray{
+    color:#6d6d6d;/*颜色*/
+}
+/*显示隐藏样式*/
+.show{
+    display:block;
+}
+.hidden{
+    display:none;
+}
+.bold{
+    font-weight: bold;
+}
+.disabled{
+    cursor: default;
+    color: #939393 !important;
+    border-color: #939393 !important;
+}
+.zbc_white{
+    color:#ffffff !important;
+}

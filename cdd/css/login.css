@@ -1,0 +1,284 @@
+/*整体背景颜色*/
+.container{
+    background:#000;
+}
+/*头部样式*/
+.nav{
+    width:1200px;
+    margin:0 auto;
+    position: relative;
+}
+
+/*下拉菜单显示欢迎的文字*/
+.nav>.welcome_msg{
+    position:absolute;
+    top:4px;
+    left:262px;
+    margin:0 auto;
+    max-width:960px;
+    min-width:200px;
+    text-align:center;
+    font-size: 16px;
+    font-weight:normal;
+    color:#a48f69;
+
+}
+/*下拉菜单按钮*/
+.welcome_close{
+    position:absolute;
+    right:287px;
+    top:-10px;
+    color:#a48f69;
+    font-size:14px;
+}
+.welcome_content{
+    width:100%;
+    font-size: 16px;
+    background:#000;
+    height:0;
+    overflow:hidden;
+    /*transition:all .5s linear;*/
+    /*height:376px;*/
+    border-bottom: 0.5px solid rgba(164, 143, 105, 0.5);
+}
+@keyframes disc{
+    0%{
+        height:0;
+    }
+    100%{
+        height:400px;
+    }
+}
+@keyframes disc_reverse{
+    100%{
+        height:0;
+    }
+    0%{
+        height:400px;
+    }
+}
+/*下拉菜单整体样式*/
+.content_msg{
+  width:71%;
+  /*height:364px;*/
+  margin-left:147px;
+  font-size:16px;
+  margin-top:42px;
+}
+/*.welcome_close:hover+.welcome_content{*/
+    /*height:auto;*/
+/*}*/
+/*下拉菜单内的每段文字*/
+.content_msg>p{
+    color:#fff;
+    font-size:13px;
+    padding:6px 0;
+    line-height:23px;
+}
+/*背景图片*/
+.nav1{
+    background:url(../img/bg3.jpg) no-repeat;
+    background-position:-180px 91px;
+    width:100%;
+}
+/*logo图片*/
+.part>img{
+    width:282px;
+    height:162px;
+    margin-left:75px;
+    margin-top:38px;
+}
+/*Login - Register*/
+.part2>h3{
+    color: #a48f69;
+    width:100%;
+    text-align: center;
+    font-size:30px;
+    font-weight:normal;
+    padding-bottom:15px;
+    background:url(../img/bg-title-home.png) no-repeat
+    center bottom;
+}
+/*Login - Register下边文字*/
+.part2>p{
+    color:#fff;
+    max-width:514px;
+    height:48px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align:center;
+
+}
+.stage{
+    width:514px;
+    margin:0 auto;
+    text-align: center;
+    font-size:14px;
+    text-transform: uppercase;
+    color:#ffff;
+    margin-top:20px;
+}
+/*表单整体绝对定位*/
+.form{position:relative;}
+
+/*表单内容*/
+.part3{
+    width:690px;
+    height:479px;
+    /*border:1px solid red;测试*/
+    margin:0 auto;
+    margin-top:28px;
+}
+/*表单内元素清除浮动*/
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/*表单内容-左边*/
+.part3_left{
+    /*border:1px solid yellow;测试*/
+    float:left;
+    width:50%;
+}
+.part3_left>form>h3,.part3_right>h3{
+    color: #bda67c;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top:15px;
+}
+.ts{
+    max-width:300px;
+    height:64px;
+    background: url(../img/arrow-error.png) no-repeat 10px;
+    background-size:30px;
+    color:red;
+    border:1px solid red;
+    margin-top:15px;
+}
+.ts>p{
+    font-size:12px;
+    width:200px;
+    text-align: center;
+    margin-top:16px;
+    margin-left:59px;
+}
+.form_item{
+    width:330px;
+    /*border:1px solid  red;*/
+}
+.form_item>label,.form_item2>label{
+   font-size:19px;
+   color:#bda67c;
+   text-align:left;
+   text-transform:uppercase;
+
+}
+.form_item>span,.form_item2>span{
+    display:inline-block;
+    color:#f00;
+    font-size:33px;
+    vertical-align:middle;
+}
+#uname,#upwd{
+    border:1px solid #49484a;
+    background:#000;
+    color:#d6ba87;
+    box-shadow:none;
+    width:300px;
+    height:30px;
+}
+/*用户名提示框*/
+.comfirm_input{
+  font-size:12px;
+  color:red;
+  display:none;
+}
+.comfirm_upwd{
+    font-size:12px;
+    color:red;
+    display:none;
+}
+/*三个按钮公共样式*/
+#login,.form_item3>input,.part3_right>input{
+    color: #fff;
+    height:37px;
+    background: url(../img/bg-pager.png) repeat-x;
+    background-size: 100% 50px;
+    line-height: 44px;
+    font-size:16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*login图片，open按钮以及三个按钮鼠标悬停*/
+#login:hover,.form_item3>input:hover,.part3_right>input:hover,.welcome_close:hover,.part>img:hover{
+    cursor: pointer;
+}
+/*登录按钮*/
+#login{
+    width:91px;
+    margin-top:26px;
+    font-size: 14px;
+    float:left;
+}
+/*接收新密码按钮*/
+.form_item3>input{
+    width:197px;
+    font-size: 11px;
+    float:right;
+    margin-top:25px;
+    margin-right:42px;
+}
+/*表单内容-右边*/
+.part3_right{
+    float:right;
+    width:50%;
+}
+/*建立新账户按钮*/
+.part3_right>input{
+    width:224px;
+    margin-top:40px;
+    margin-left:20px;
+}
+.part3_right>h3{
+    margin-left:17px;
+}
+/*尾部样式*/
+.footer{
+    width:100%;
+    height: 119px;
+    background: #1A1A1A;
+}
+/*尾部一、图片外壳*/
+.footer_box,.footer_box2{
+    width:33%;
+    height:76px;
+    float:left;
+    text-align: center;
+    margin-top:22px;
+    border-right: 0.1px solid #8D8D8D;
+}
+/*尾部第一、二张图片*/
+.footer_pucture>img,.footer_pucture2>img{
+    width: 158px;
+    height: 64px;
+}
+.form_box3{
+    width:319px;
+    height:72px;
+    /*border:1px solid red;测试*/
+    float:right;
+    margin-top:53px;
+    margin-left:-31px;
+}
+.form_box3>a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #a08149;
+    font-size:16px;
+}
+
+
+

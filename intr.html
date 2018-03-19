@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/jt_common.css">
+	 <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+	<style>
+	.intr{
+		width:100%;
+		height: 900px;
+		background-size: 1920px 900px;
+		background-position:50% 50%;
+		vertical-align: top;
+		background-color: black;
+		background-repeat: no-repeat;
+		overflow: hidden;
+	}
+	.intr .intr_left{
+		position: relative;
+		margin-top: 100px;
+		width: 484px;
+		background-color: rgba(0,0,0,0.9);
+    	overflow: hidden;
+	}
+	.intr .intr_left a.chacha{
+		width: 30px;
+		height: 30px;
+		font-size: 70px;
+		position: absolute;
+		font-weight: normal;
+		top: 10px;
+   		right: 28px;
+   		color: #c3a07d;
+	}
+	.intr .intr_left h3{
+		margin-left: 25px;
+		font-family: 'Georgia','serif';
+	    font-weight: normal;
+	    text-transform: uppercase;
+	    font-style: italic;
+	    letter-spacing: -1px;
+	    font-size: 33px;
+	    color: #c3a07d;
+	    margin: 28px 0 25px 25px;
+	}
+	.intr .intr_left span{
+		display: inline-block;
+		color: #bebebe;
+		margin-bottom: 15px;
+		font-size: 12px;
+	}
+	</style>
+</head>
+<body>
+	<div class="header"></div>
+	<div class="intr">
+		<table></table>
+		<div class="intr_left">
+			<a href="jt.html" class="chacha" title="close">×</a>
+			<h3></h3>
+			<div class="span"></div>
+		</div>
+	</div>
+	<div class="footer"></div>
+	<script src="js/jquery-3.2.0.js"></script>
+	<script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+	<script src="js/jt_index.js"></script>
+	<script>
+		// $("h3").click(function(){
+		// 	alert("Ggg"),
+		// 	$.ajax({type:"get",url:"dataa/intr.php"}).then(data=>{
+		// 		// var res = json.parse(data);
+		// 		console.log(data[0]);
+		// 	})
+		// 	})
+	</script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/zbase.css"/>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/zindex.css"/>
+    <link rel="stylesheet" href="css/znav.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+<body>
+<div>
+    <div class="header" id="header"></div>
+<div class="zbc_bg">
+
+    <div class="zbc_section">
+        <div class="zbc_top_tittle">
+            <h1>销售点</h1>
+        </div>
+        <div class="zbc_top_body">
+            <div class="zbc_bod_left">
+                <div class="zbc_search_title">
+					<div class="zbc_search_title_left"><a href="#" class="zbc_z_btn zbc_btn_tranition">快速搜索</a></div>
+					<div class="zbc_search_title_middle"><a href="#" class="zbc_z_btn zbc_btn_tranition zbc_btn_hover">高级搜索</a></div>
+					<div class="zbc_search_title_right"><a href="#" class="zbc_z_btn zbc_btn_tranition">定位位置</a></div>
+				</div>
+                <div>
+                    <div class="zbc_fast_search hidden">
+                        <label for="country" class="zbc_fastsearch_label">
+                            键入一个国家/市场或城市<input type="text" id="country" class="zbc_fastsearch_input">
+                        </label>
+                        <div class="zbc_fast_div">
+                            <a href="#" class="zbc_fast_a">搜索</a>
+                        </div>
+                    </div>
+                    <div class="zbc_senior_search show">
+                        <div class="zbc_fastsearch_div">
+                            <label for="part" class="zbc_fastsearch_label">
+                                区域<input type="text" id="part" class="zbc_fastsearch_input disabled" disabled>
+                                <a class="zbc_fastsearch_part" id="parta">
+                                    <div class="zbc_fastsearch_partdiv1 show" id="zbc_fastsearch_partdiv1"></div>
+                                    <div class="zbc_fastsearch_partdiv2 hidden" id="zbc_fastsearch_partdiv2">x</div>
+                                </a>
+                            </label>
+                            <div class="zbc_search_list hidden" id="partList">
+                                <ul>
+                                    <li>中东</li>
+                                    <li>亚太区</li>
+                                    <li>加勒比海区</li>
+                                    <li>北美洲</li>
+                                    <li>南美洲</li>
+                                    <li>欧洲</li>
+                                    <li>非洲</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="zbc_fastsearch_div">
+                            <label for="country1" class="zbc_fastsearch_label">
+                                国家/地区<input type="text" id="country1" class="zbc_fastsearch_input zbc_input_chose disabled" disabled>
+                                <a class="zbc_fastsearch_part" id="countrya">
+                                    <div class="zbc_fastsearch_partdiv1 show" id="zbc_fastsearch_partdiv3"></div>
+                                    <div class="zbc_fastsearch_partdiv2 hidden" id="zbc_fastsearch_partdiv4">x</div>
+                                </a>
+                            </label>
+                            <div class="zbc_search_list hidden" id="countryList">
+                            </div>
+                        </div>
+                        <div class="zbc_fastsearch_div">
+                            <label for="city" class="zbc_fastsearch_label">
+                                城市<input type="text" id="city" class="zbc_fastsearch_input zbc_input_chose disabled" disabled>
+                                <a class="zbc_fastsearch_part" id="citya">
+                                    <div class="zbc_fastsearch_partdiv1 show" id="zbc_fastsearch_partdiv5"></div>
+                                    <div class="zbc_fastsearch_partdiv2 hidden" id="zbc_fastsearch_partdiv6">x</div>
+                                </a>
+                            </label>
+                            <div class="zbc_search_list hidden" id="cityList">
+                            </div>
+                        </div>
+                        <div class="zbc_fast_div">
+                            <a href="#" class="zbc_fast_a" id="zbc_highsearch">搜索</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="zbc_bod_right">
+                <a href="#zbc_forth" class="zbc_btn zbc_btn_tranition">所有专卖店</a>
+            </div>
+            <div class="zbc_body_bottom">
+                <div>
+                    <h2 class="zbc_body_botTitle">通过电话联系我们</h2>
+                    <p class="zbc_body_bothi">我们的礼宾部随时为您解答有关搜索的任何问题</p>
+                    <div>
+                        <div>
+                            <select name="wphone" id="wphone" class="zbc_body_botselect">
+                                <option data-country="CN" value="400-623-1289" selected="selected">中国: 400-623-1289</option>
+                                <option data-country="HK" value="+852 8200 1755">香港: +852 8200 1755</option>
+                                <option data-country="MO" value="+853 080 0733">澳门: +853 080 0733</option>
+                                <option data-country="AT" value="+43 1 928 1755">奥地利: +43 1 928 1755</option>
+                                <option data-country="BE" value="+32 2 405 1755">比利时: +32 2 405 1755</option>
+                                <option data-country="CH" value="+41 22 580 1755">瑞士: +41 22 580 1755</option>
+                                <option data-country="DE" value="+49 89 203 03 1755">德国: +49 89 203 03 1755</option>
+                                <option data-country="International" value="+41 41 580 1755">国际: +41 41 580 1755</option>
+                                <option data-country="ES" value="+34 91 419 1755">西班牙: +34 91 419 1755</option>
+                                <option data-country="FR" value="+33 1 70 70 20 27">法国: +33 1 70 70 20 27</option>
+                                <option data-country="GB" value="+44 208 585 1755">英国: +44 208 585 1755</option>
+                                <option data-country="IT" value="+39 023 602 1755">意大利: +39 023 602 1755</option>
+                                <option data-country="NL" value="+31 107 131 889">荷兰: +31 107 131 889</option>
+                                <option data-country="SE" value="+46 856 642 659">瑞典: +46 856 642 659</option>
+                                <option data-country="JP" value="+81 (0)120-63-1755">日本: +81 (0)120-63-1755</option>
+                                <option data-country="US" value="+1 (877) 701-1755">美国: +1 (877) 701-1755</option>
+                                <option data-country="TW" value="+886 008 0185 6857">台湾: +886 008 0185 6857</option>
+                                <option data-country="SG" value="+65 800 852 3656">新加坡: +65 800 852 3656</option>
+                                <option data-country="VN" value="+84 12280284">越南: +84 12280284</option>
+                                <option data-country="MY" value="+60 1 800 81 7947">马来西亚: +60 1 800 81 7947</option>
+                                <option data-country="TH" value="+66 001 800 852 5409">泰国: +66 001 800 852 5409</option>
+                                <option data-country="ID" value="+62 001 803 852 6127">印尼: +62 001 803 852 6127</option>
+                                <option data-country="AU" value="+61 1800 796 452">澳大利亚: +61 1800 796 452</option>
+                            </select>
+                        </div>
+                        <a href="#" class="zbc_body_call">呼叫</a>
+                        <div class="zbc_body_botdetail">
+                            <p>开放时间</p>
+                            <p>星期一 - 星期日</p>
+                            <p>上午10时 - 下午7时 节假日除外</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zbc_body_but">
+                    <h2>通过电子邮件联系我们</h2>
+                    <a href="#" class="zbc_callus_a">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="zbc_second_bg">
+    <div class="zbc_second_bod">
+        <div class="zbc_second_top">
+            <div class="zbc_second_topborder">
+                <h1 class="zbc_second_toptitle">蒞臨江詩丹頓專賣店</h1>
+            </div>
+            <div class="zbc_second_topword">
+                <p class="zbc_second_topwordp">江詩丹頓專賣店讓您投入品牌的非凡世界。內部設計呼應錶廠時計彰顯出的傳統技藝與卓越製錶工藝。質感獨特的珍稀材質、真皮、木材、青銅以及充滿當代感的顏色搭配，營造精緻的氛圍，同時富有連貫性及創新的精神。</p>
+            </div>
+        </div>
+        <div>
+            <a href="#">
+                <img src="img/zbc/image1.scale.1410.911.1517386762570.jpeg" alt="江诗丹顿专卖店" class="zbc_second_pic">
+                <div class="zbc_second_bottit">
+                    <div class="zbc_second_foottitle">
+                        <h3>苏黎世班霍夫大街</h3>
+                    </div>
+                    <div class="zbc_second_footword">
+                        <p>全新江诗丹顿苏黎世专卖店位于瑞士经济之都的中心地带，坐拥班霍夫大街（Bahnhofstrasse）的黄金地段。在这条主要商业大街上，国际知名的时装、腕表和珠宝品牌林立，是开设这家占地约100平方米的全新专卖店的理想地点。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="zbc_third_bg">
+    <div class="zbc_third_body">
+        <div class="zbc_third_title">
+            <div class="zbc_third_topborder">
+                <h1 class="zbc_third_toptitle">专属服务</h1>
+            </div>
+        </div>
+        <div>
+            <ul class="zbc_third_ul zbc_clearfloat">
+                <li class="zbc_third_li">
+                    <img src="img/zbc/image.scale.320.180.1509707759610.jpeg" alt="" class="zbc_third_botpic">
+                    <div>
+                        <h3 class="zbc_third_wordtitle">专卖店独家表款</h3>
+                        <p class="zbc_third_word">江诗丹顿的每一个系列都有特别的表款。这些独特表款只在江诗丹顿专卖店有售。一些特别表款更只会在某些专卖店内限量发售。</p>
+                        <a href="#" class="zbc_third_a">所有专卖店独家表款</a>
+                    </div>
+                </li>
+                <li class="zbc_third_li">
+                    <img src="img/zbc/image.scale.320.180.1509707759618.jpeg" alt="" class="zbc_third_botpic">
+                    <div>
+                        <h3 class="zbc_third_wordtitle">腕表保养</h3>
+                        <p class="zbc_third_word">若您需要更换表链／表带、检查、维修腕表或去磁处理，请与我们联系，以便为您的江诗丹顿腕表安排维修和保养。</p>
+                    </div>
+                </li>
+                <li class="zbc_third_li">
+                    <img src="img/zbc/image.scale.320.180.1509707759623.jpeg" alt="" class="zbc_third_botpic">
+                    <div>
+                        <h3 class="zbc_third_wordtitle">服务中心</h3>
+                        <p class="zbc_third_word">大部分专卖店内均有制表专家为您的腕表进行保养，并为您提供瑞士日内瓦表厂的售后服务。品牌亦提供全球的服务中心网络。 </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="zbc_forth" id="zbc_forth"></div>
+<div class="footer" id="footer"></div>
+</div>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/header.js"></script>
+<script src="js/zindex.js"></script>
+<script src="js/znav.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

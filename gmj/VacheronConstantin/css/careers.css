@@ -1,0 +1,218 @@
+.careers {
+	font-style: italic;/*默认样式*/
+	font-family: Georgia, serif, Simsun;
+	/*overflow-y: hidden;*/
+	width: 100%;
+}
+
+.recruitment_top{
+	width: 100%;
+	height: 495px;
+
+	background-size: contain;
+	/*background-color: #000;*/
+}
+.recruitment_main {
+	width: 100%;
+	margin: 0 auto 100px auto;
+	text-align: center;
+}
+
+.rtop {
+	position: relative;
+	margin: 0 auto;
+	background: #000 url(../img/careers/imag12e.jpeg) no-repeat center center;
+	width: 100%;
+	height: 100%;
+}
+
+.rtbox {
+	text-align: center;
+	top: 40%;
+	left: 20%;
+	position: absolute;
+	width: 350px;
+	height: 115px;
+}
+
+.rtbox>h1 {
+	color: #C3A07D;
+}
+
+.rt_font {
+	font: italic bold 1.3em/0.95em Georgia, serif, Simsun;
+	color: #B3B3B3;
+	display: inline-block;
+	width: 160px;
+	margin: 10px;
+}
+
+.rtboxline {
+	padding: 5px;
+	background-position: top center;
+}
+
+
+/*职位页主体内容*/
+/*主内容标题*/
+.main_title {
+	margin: 60px;
+	text-align: center;
+}
+
+.main_title>span {
+	display: inline-block;
+	width: 720px;
+	font-size: 1.3em;
+	font: italic 300 1.3em Georgia, serif, Simsun;
+	color: #554728;
+}
+/*三个选项*/
+.main_con {
+	margin: 0 auto;
+	width: 1000px;
+	height: auto;
+}
+/*每个选项*/
+.m_item {
+	width: 32%;
+	transition: all .1s linear;
+	background-color: #fff;
+}
+
+.m_item:hover {
+ 	background: #EDEDED;
+}
+
+
+.m_item>.m_title {
+	margin-top: 7px;
+	font-size: 1.2em;
+	color: #777;
+}
+
+.m_item>.m_desc {
+	font-size: 1.1em;
+	font-weight: 300;
+	color: #554728;
+	height: 100px;
+}
+
+.m_item>.m_line {
+	background-position: center -10px;
+	margin-left: 25%;
+	width: 50%;
+	padding: 5px;
+}
+/*按钮*/
+.m_item>.btn_1 {
+	display: inline-block;
+	margin: 10px 0 30px 0;
+	width: 120px;
+	height: 25px;
+	line-height: 25px;
+	border: 1px dotted #554728;
+	transition: all .1s linear;
+}
+
+.m_item>.btn_1>a {
+	color: #777;
+	font: 0.8em Georgia, serif, Simsun;
+
+}
+
+.m_item>.btn_1:hover {
+	background-color: #DEDDDA;
+}
+/*中段大图*/
+.recruitment_middle {
+	height: 645px;
+	background: url('../img/careers/ima89ge.jpeg') no-repeat top center;
+	background-size: cover;
+	background-position: 100% 100%;
+}
+/*价值观*/
+.recruitment_value {
+	height: 410px;
+	width: 100%;
+}
+
+.rv{
+	position: relative;
+	text-align: center;
+	margin: 50px auto;
+	width: 1000px;
+}
+
+.rv>.rv_t>h1 {
+	font-weight: 400;
+	color: #C3A07D;
+}
+
+.rv>.rv_t>.rv_line{
+	padding-bottom: 7px;
+	background-position: center -6px;
+	background-size: 35%;
+}
+
+.rv>.rv_img {
+	position: absolute;
+	left: 0%;
+}
+
+.rv>.rv_val {
+	text-align: left;
+	position: absolute;
+	right: 0;
+	top: 80px;
+	width: 55%;
+	font: italic 300 1.2em Georgia, serif, Simsun;
+	color: #554728;
+}
+
+.rv>.rv_val>ol>li{
+	font-family: Georgia, serif, Simsun;
+	padding-bottom: 25px;
+}
+/*探索*/
+.rv>.rv_explore {
+	position: absolute;
+	left: 0;
+	bottom: -320px;
+}
+/*小字探索*/
+.rv_explore a{
+	font: 0.75em '微软雅黑';
+	color: #777;
+}
+/*尾部*/
+.recruitment_button {
+	width: 100%;
+	height: 380px;
+	background: url(../img/careers/imageclockb.png) no-repeat top center;
+	background-size: cover;
+}
+
+.rb_con {
+	margin: 0 auto;
+	height: 100%;
+	width:1000px;
+}
+
+
+.rb_explore {
+	text-align: center;
+	float: right;
+	margin-top: 100px;
+	width: 36%;
+}
+
+.rb_explore>h1 {
+	color: #C3A07D;
+	font: italic 400 2.0em/1.0em '微软雅黑';
+	padding: 15px 0;
+}
+
+.rb_explore>span {
+	margin-top: 30px;
+}
